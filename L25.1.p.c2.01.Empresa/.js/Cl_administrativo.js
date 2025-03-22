@@ -10,19 +10,19 @@ export default class administrativo extends personal {
             case 1: {
                 if (this.edad >= 18)
                     return 50;
-                else 0
+                else return 0
             };
                 break;
             case 2: {
                 if (this.edad >= 18)
                     return 100
-                else 0
+                else return 0
             };
                 break;
             case 3: {
                 if (this.edad >= 18)
                     return 100
-                else 0
+                else return 0
             };
                 break;
             default:
