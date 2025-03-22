@@ -13,11 +13,3 @@ let camisa = new ropa("Camisa",  20,  2 );
 let short = new ropa("Short", 20,  3 );
 let toddy = new viveres("Toddy",  30,  "NO" );
 let blusa = new ropa("Blusa",  40,  3 );
-
-let salida = document.getElementById("salida");
-    
-salida.innerHTML = `
-<tr>
-<th>nombre</th>
-</tr>
-${leche.mostrar()}`

@@ -8,16 +8,11 @@ export default class ropa extends articulo{
 
     porcDesc() {
         if (this.color === 3) {
-            return 10/100;
+            return this.precio() - (this.precio() * (10/100));
         } 
 
         else {
             return 0;
         }
     }
-    mostrar(){
-        return `<tr>
-        <td>${this.nombre}</td>
-        </tr>`}
-    
 }

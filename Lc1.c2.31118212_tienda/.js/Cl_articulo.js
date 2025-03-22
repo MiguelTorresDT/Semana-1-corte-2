@@ -1,38 +1,34 @@
 export default class articulo {
-    contructor(nombre, costo){
+    constructor(nombre, costo) {
         this.nombre = nombre;
         this.costo = costo;
     }
 
-    set nombre(nombre){
+    set nombre(nombre) {
         this._nombre = nombre;
     }
 
-    get nombre(){
+    get nombre() {
         return this._nombre;
     }
 
-    set costo(costo){
+    set costo(costo) {
         this._costo = +costo;
     }
 
-    get costo(){
+    get costo() {
         return this._costo;
     }
 
-    porcInc(){
+    porcInc() {
 
         return 20 / 100
 
-        }
-        porcDesc(){
+    }
 
-        return 0
+    precio() {
 
-        }
-        precio(){
+        return this.costo + (this.costo * this.porcInc())
 
-        return this.costo + (this.costo * this.porcInc()- this.costo * this.porcDesc())  
-
-       }
+    }
 }

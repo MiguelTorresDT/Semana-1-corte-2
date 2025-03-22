@@ -9,17 +9,14 @@ export default class viveres extends articulo{
     }
 
     porcGanancia(){
-        if (this.basico)
+        if (this.basico == "SI")
 
-        return 5/100;
+        return this.costo + (this.costo * (5/100));
 
         else 
         
-        return this.porcInc();
+        return this.precio();
 
         }
-        mostrar(){
-            return `<tr>
-            <td>${this.nombre}</td>
-            </tr>`}
+       
 }
